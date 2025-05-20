@@ -188,7 +188,7 @@ b = 44
 print('or Operator:',(a < b) or (a <= b))
 
 
-# Type Conversion...[Automatically Type convert kr deta hai.
+#1.Type Conversion...[Automatically Type convert kr deta hai.]
 # code:
 a,b = 51 , 9.2  # 'Int' and 'Float' ko combine kr sakte hai.
 sum = a + b     # 'Float' 'Int' se superior hota hai, Value goes to change into 'Float'.
@@ -221,5 +221,115 @@ a,b = 51 , 23  #'Int' and 'Int' ko combine nhi kar sakte.
 sum = a + b 
 print(sum)
 # print(a + b)
+
+#2.Type Casting...[Manually karte hai.]
+#  Code:
+a,b = 12,'23'
+c = int (b)
+sum = a + c
+print(sum)
+
+a,b = 12,'23'
+c = float (b)
+sum = a + c
+print(sum)
+
+a,b = 12, 23
+c = float (a)
+sum = a + c
+print(sum)
+
+# throw ERROR!
+a,b = '12','23'
+c = int (b)
+sum = a + c
+print(sum)
+
+# Code:--
+a = float('2')
+b = 12.0
+print(type (a))
+print(a + b)
+
+a = int('2')
+b = 12.0
+print(type (a))
+print(a + b)
+
+a = float(2)
+b = 12.0
+print(type (a))
+print(a + b)
+
+a = int(2.0)
+b = 12.0
+print(type (a))
+print(a + b)
+
+a = str(2.0)
+b = 12.0
+print(type (a))
+print(a + b)
+
+a = str(2)
+b = 12.0
+print(type (a))
+print(a + b)
+
+# Code:--
+a = 25
+a = str(a)
+print(type (a))
+
+a = 2.05
+a = str(a)
+print(type (a))
+
+a = '25'
+a = int(a)
+print(type (a))
+
+a = 25
+a = float(a)
+print(type (a))
+
+a = '25'
+a = float(a)
+print(type (a))
+
+
+# Input in Python :
+# input (used to accept the values using keyboard from user.)
+# input (Result from input() is always a string.) 
+
+# Code:--
+name = input('Enter Your Name:')
+
+print('Welcom',name)
+print('Welcom',name, 'in Our Python Course.')
+
+value = input('Enter Some Value:')
+
+print(type (value))
+
+# Code:--
+name = input('Enter Your Name:')
+age = input('Enter Your Age:')
+marks = input('Enter Your Marks:')
+
+print('Welcome',name,'in Our First Coding Prongram.')
+print('Your are in Your',age,'Years Congratulations! You are in Your Growing age.')
+print('Your Obtaion',marks,'woohoo!')
+
+# Other Way:--
+name = int(input('Enter Your Name:'))
+age = int(input('Enter Your Age:'))
+
+print(name)
+# print(age)
 '''
 
+#Qus 1.Write a program to input two numbers and print their sum.
+first = int(input('Enter Your First Item:'))
+second = int(input('Enter Your Second Item:'))
+print('Sum = ',first + second)

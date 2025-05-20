@@ -122,8 +122,7 @@ elif(Light=='green'):
 else:
     print('NO SIGNAL')
 
-
-
+    
 #Students Marks With Grade.....
 
 #marks = input("enter your marks:")
